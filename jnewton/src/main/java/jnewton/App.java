@@ -8,6 +8,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        //Wrapper.makeRequest("simplify","2*2");
+        System.out.println(Newton.Cosine("pi"));
+        //System.out.println( "Hello World!" );
     }
 }
