@@ -14,4 +14,11 @@ double CosPi = Double.parseDouble(cosPiStr);
 
 ## A little bit about newton
 
-Newton is a micro-service based API written in node.js that does anything from numerical calculation to symbolic math parsing. Newton works on sending HTTP GET requests. jnewton takes care of all this for you.
+Newton is a micro-service based API written in node.js that does anything from numerical calculation to symbolic math parsing. Newton works on sending HTTP GET requests and recieving responses in the JSON format. jnewton takes care of all this for you.
+
+### Supported Endpoints (as of now)
+
+1. Cosine
+2. Sine
+3. Tangent
+4. AbsoluteValue
