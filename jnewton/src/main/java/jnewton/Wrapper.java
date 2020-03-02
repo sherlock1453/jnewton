@@ -48,10 +48,14 @@ public class Wrapper
                 response.append(output);
             }
             conn.disconnect();
-            Object responseObj = new JSONParser().parse(response.toString());
+            JSONObject responseObj = (JSONObject) new JSONParser().parse(response.toString());
 
             //System.out.println("Output from Server .... \n" + response.toString());
-            return (JSONObject) responseObj;
+            if (responseObj.containsKey("error"))
+            {
+                return new JSONObject();
+            }
+            return responseObj;
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
