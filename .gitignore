@@ -10,7 +10,6 @@ maven-eclipse.xml
 *.iws
 *.eclipse
 .DS_Store
-
 #Visual Studio files
 *.[Oo]bj
 *.user
