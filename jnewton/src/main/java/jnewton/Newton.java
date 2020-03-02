@@ -3,9 +3,29 @@ package jnewton;
 import org.json.simple.JSONObject;
 
 public class Newton {
-    public static double Cosine(String x){
+    public static String Cosine(String x){
         JSONObject resObj = Wrapper.makeRequest("cos",x);
-        double res = Double.parseDouble((String)resObj.get("result"));
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
         return res;
     }
+    public static String Sine(String x){
+        JSONObject resObj = Wrapper.makeRequest("sin",x);
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String Tangent(String x){
+        JSONObject resObj = Wrapper.makeRequest("tan",x);
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String AbsoluteValue(String x){
+        JSONObject resObj = Wrapper.makeRequest("abs",x);
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+
 }

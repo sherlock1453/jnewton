@@ -9,7 +9,8 @@ public class App
     public static void main( String[] args )
     {
         //Wrapper.makeRequest("simplify","2*2");
-        System.out.println(Newton.Cosine("pi"));
+        //String cosPi = (String) Newton.Sine("2x+pi");
+        //System.out.println(cosPi);
         //System.out.println( "Hello World!" );
     }
 }
