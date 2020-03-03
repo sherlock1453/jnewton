@@ -39,5 +39,94 @@ public class Newton {
         String res = (String)JSONUtil.getResult(resObj);
         return res;
     }
-
+    public static String Simplify(String x){
+        JSONObject resObj = Wrapper.makeRequest("simplify",x);
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String Factor(String x){
+        JSONObject resObj = Wrapper.makeRequest("factor",x);
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String Derive(String x){
+        JSONObject resObj = Wrapper.makeRequest("derive",x);
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String Integrate(String x){
+        JSONObject resObj = Wrapper.makeRequest("integrate",x);
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String Zeroes(String x){
+        JSONObject resObj = Wrapper.makeRequest("zeroes",x);
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String AreaUnderCurve(String x){
+        JSONObject resObj = Wrapper.makeRequest("area",x);
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String ArcCos(String x){
+        JSONObject resObj = Wrapper.makeRequest("arccos",x);
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String ArcSin(String x){
+        JSONObject resObj = Wrapper.makeRequest("arcsin",x);
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String ArcTan(String x){
+        JSONObject resObj = Wrapper.makeRequest("arctan",x);
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
+    public static String Logarithm(String x){
+        JSONObject resObj = Wrapper.makeRequest("log",x);
+        if (resObj.isEmpty())
+        {
+            return new String("NaN");
+        }
+        String res = (String)JSONUtil.getResult(resObj);
+        return res;
+    }
 }
