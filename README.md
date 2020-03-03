@@ -22,3 +22,12 @@ Newton is a micro-service based API written in node.js that does anything from n
 2. Sine
 3. Tangent
 4. AbsoluteValue
+5. Simplify
+6. Factor
+7. Derive
+8. Integrate
+9. Zeroes
+10. Find Tangent
+11. Inverse Sine
+12. Inverse Cosine
+13. Logarithm

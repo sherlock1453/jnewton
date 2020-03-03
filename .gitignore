@@ -9,6 +9,7 @@ maven-eclipse.xml
 *.ipr
 *.iws
 *.eclipse
+*.txt
 .DS_Store
 #Visual Studio files
 *.[Oo]bj
