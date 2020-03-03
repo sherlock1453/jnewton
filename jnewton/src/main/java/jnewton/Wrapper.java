@@ -18,12 +18,15 @@ public class Wrapper
     {
         //TODO: Make LocalWrapper
     }
-    
-    Wrapper()
+    static
     {
         Wrapper.endpoints = new String[]{"simplify", "factor", "derive", "integrate", "zeroes", "tangent",
-        "area", "cos", "sin", "tan", "arccos", "arcsin", "arctan", "abs",
-        "log"};
+                "area", "cos", "sin", "tan", "arccos", "arcsin", "arctan", "abs",
+                "log"};
+    }
+    Wrapper()
+    {
+
     }
     public static String[] getValidEndpoints()
     {

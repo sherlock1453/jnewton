@@ -4,12 +4,18 @@ import org.json.simple.JSONObject;
 
 public class JSONUtil {
     public static String getResult(JSONObject obj) {
-            String res = (String)obj.get("result");
+        if (obj.containsKey("result")) {
+            String res = (String) obj.get("result");
             return res;
+        }
+        return new String("NaN");
     }
     public static String getOperation(JSONObject obj) {
-        String res = (String)obj.get("operation");
-        return res;
+        if (obj.containsKey("operation")){
+            String res = (String)obj.get("operation");
+            return res;
+        }
+        return new String("NaN");
     }
     public static String getExpression(JSONObject obj) {
         String res = (String)obj.get("expression");
